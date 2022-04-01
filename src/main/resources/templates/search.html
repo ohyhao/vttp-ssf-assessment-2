@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+    <thead>
+        <tr>
+            <th></th>
+            <th> Title </th>
+            <th> Released </th>
+            <th> Rating </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-th-each="result : ${results}">
+            <td><img data-th-src="${result.backgroundImage}" width="300" height="200"></td>
+            <td><span data-th-text="${result.name}"> Title </span></td>
+            <td><span data-th-text="${result.released}"> Released </span></td>
+            <td><span data-th-text="${result.rating}"> Rating </span></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
